@@ -29,6 +29,7 @@
               <li><a href="#anchor-location">Location</a></li>
               <li><a href="#anchor-organizers">Organizers</a></li>
               <li><a href="#anchor-sponsors">Sponsors</a></li>
+              <li><a href="#anchor-communications">Communications</a></li>
             </ul>
             <a href="#" class="btn btn-warning">참가신청</a>
           </div><!--/.nav-collapse -->
@@ -153,7 +154,7 @@
           <br/>
 
           <a class="pull-left">
-            <img class="img-circle" src="photo/1.jpeg" alt="" width="130">
+            <img class="img-circle" src="photo/speakers/1.jpeg" alt="" width="130">
           </a>
           <div class="media-body">
           <h4 class="media-heading">이용희</h4>
@@ -181,7 +182,7 @@
         <br/>
 
         <a class="pull-left">
-          <img class="img-circle" src="photo/2.jpg" alt="" width="130">
+          <img class="img-circle" src="photo/speakers/2.jpg" alt="" width="130">
         </a>
         <div class="media-body">
           <h4 class="media-heading">손영수</h4>
@@ -207,11 +208,13 @@
         <br/>
 
         <a class="pull-left">
-          <img class="img-circle" src="photo/3.png" alt="" width="130">
+          <img class="img-circle" src="photo/speakers/3.png" alt="" width="130">
         </a>
         <div class="media-body">
           <h4 class="media-heading">윤태섭</h4>
           <ul>
+            <li>(주) 섹시다이나마이트 섹시</li>
+            <li>숭실대학교 미디어학부 석사재학중</li>
             <li>소프트웨어 마에스트로 2기</li>
           <ul>
         </div>
@@ -228,12 +231,14 @@
         <br/>
 
         <a class="pull-left">
-          <img class="img-circle" src="photo/4.jpg" alt="" width="130">
+          <img class="img-circle" src="photo/speakers/4.png" alt="" width="130">
         </a>
         <div class="media-body">
           <h4 class="media-heading">이재근</h4>
           <ul>
-            <li>소프트웨어 마에스트로 1기</li>
+            <li>소프트웨어 마에스트로 1기 최종 10인 선정</li>
+            <li>NHN 멤버십 2기</li>
+            <li>LGT, iHub등 다수 공모전 수상</li>
           <ul>
         </div>
       </div>
@@ -249,12 +254,15 @@
         <br/>
 
         <a class="pull-left">
-          <img class="img-circle" src="photo/5.jpg" alt="" width="130">
+          <img class="img-circle" src="photo/speakers/5.jpg" alt="" width="130">
         </a>
         <div class="media-body">
           <h4 class="media-heading">전수열</h4>
           <ul>
-            <li>소프트웨어 마에스트로 2기</li>
+            <li>Joyfl 대표이사 (<a href="http://joyfl.net">http://joyfl.net</a>)</li>
+            <li>Smarteen AppClub 2기 회장</li>
+            <li>Sexy iOS Developers Korea 운영</li>
+            <li>Flash Platform Developers 운영</li>
           <ul>
         </div>  
       </div>
@@ -266,9 +274,14 @@
     <h1>Location</h1>
 
     <div class="row-fluid">
-      <img class="span8" src="images/map.png" />
-      <div class="span4">
-      선릉 아남타워 7층 - 소프트웨어 마에스트로 연수센터 대회의실
+      <div class="span7">
+      <a href="http://map.naver.com/?lng=127.0448792&lat=37.5036449&dlevel=11&mapMode=0&pinId=20623109&pinType=site&enc=b64" target="_blank"><img src="images/map.png" /></a>
+      <br/>
+      클릭하면 네이버 지도로 이동합니다! ;)
+      </div>
+
+      <div class="span5">
+      선릉 아남타워 7층 - SW Maestro 연수센터
       <ul>
         <li>지하철 2호선 선릉 : 5번 출구로 나와서 역삼역 방향으로 약 400미터(도보 5분)</li>
       </ul>
@@ -308,6 +321,23 @@
       <a href="http://www.facebook.com/groups/169121523199004" target="_blank"><img src="photo/sponsors/eva.png" width="100" /></a>
     </div>
 
+    <br/>
+    <a id="anchor-communications"></a>
+    <h1>Communications</h1>
+    <hr>
+    여러분의 다양한 생각들을 나누어보세요! ;)
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'somainside'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
   <hr>
 
   <p>
@@ -317,9 +347,9 @@
 
   </div> <!-- /container -->
   
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script>
+  <script type="text/javascript">
     $(document).ready(function() {
       $("#style-toggle").click(function (e) {
         e.preventDefault();
