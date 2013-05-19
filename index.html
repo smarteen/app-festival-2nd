@@ -406,8 +406,24 @@
 
   <script type="text/javascript">
     $(function () {
-      $("#myCarousel").carousel();
-      $("#myCarousel").interval = 0;
+      $("#myCarousel")
+      .carousel( {
+      	interval: 0
+      } )
+      
+      .bind( "slide", function() {
+      	$(".carousel-indicators li").removeClass( "active" );
+      } )
+      
+      .bind( "slid", function( e ) {
+      	var index = $(".active", e.target).index();
+      	var indicator = $(".carousel-indicators li :eq(" + index + ")").addClass( "active" )
+      } );
+      
+      $(".carousel-indicators li").bind( "click", function( e ) {
+	    var index = parseInt( e.target.getAttribute( "data-slide-to" ) );
+	    $("#myCarousel").carousel( index );
+      } );
     });
   </script>
 
